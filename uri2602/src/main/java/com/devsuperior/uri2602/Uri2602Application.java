@@ -10,7 +10,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import com.devsuperior.uri2602.dto.CustomerMinDTO;
 import com.devsuperior.uri2602.repositories.CustomerRepository;
-import com.devsuperior.uri2602.services.CustomerService;
 
 @SpringBootApplication
 public class Uri2602Application implements CommandLineRunner {
@@ -18,8 +17,8 @@ public class Uri2602Application implements CommandLineRunner {
 	@Autowired
 	private CustomerRepository repository;
 
-	@Autowired
-	private CustomerService service;
+//	@Autowired
+//	private CustomerService service;
 
 	public static void main(String[] args) {
 		SpringApplication.run(Uri2602Application.class, args);
